@@ -375,6 +375,20 @@ namespace RetroBar.Utilities
             get => _winNumHotkeysAction;
             set => SetEnum(ref _winNumHotkeysAction, value);
         }
+        
+        private bool _useApi = false;
+        public bool UseApi
+        {
+            get => _useApi;
+            set => Set(ref _useApi, value);
+        }
+        
+        private int _apiPort = 51111;
+        public int ApiPort
+        {
+            get => _apiPort;
+            set => Set(ref _apiPort, value);
+        }
         #endregion
 
         #region Old Properties
